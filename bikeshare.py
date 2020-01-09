@@ -17,7 +17,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Welcome! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
@@ -199,7 +199,7 @@ def user_stats(df, city):
 
 def see_raw_data(city):
     """Allow to scroll through the raw data of the csv file selected"""
-    
+
     while True:
         try:
             see_raw_data_input = input('\nIn addition of the stats above, would you like to scroll through the raw data? (y/n)\n')
@@ -220,7 +220,7 @@ def see_raw_data(city):
                             if continue_scroll == 'n':
                                 break
                             else:
-                                count_row_start_iteration +=5      
+                                count_row_start_iteration +=5
         except Exception :
             print ("Please answer 'y' or 'n'\n")
 
@@ -234,8 +234,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
         see_raw_data(city)
-        
-        
+
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
