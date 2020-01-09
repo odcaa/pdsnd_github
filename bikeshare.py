@@ -215,7 +215,7 @@ def see_raw_data(city):
                     for row in reader:
                         print(row)
                         count_row_read += 1
-                        if count_row_read == count_row_start_iteration +5:
+                        if count_row_read == count_row_start_iteration +6:
                             continue_scroll = input('\nDo you want to continue scrolling 5 more rows through the raw data? (y/n): ')
                             if continue_scroll == 'n':
                                 break
